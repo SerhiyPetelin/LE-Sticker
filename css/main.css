@@ -1,3 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lato:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arvo', sans-serif;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
 :root {
     --first-color: #300070;
     --second-color: #e4417a;
@@ -5,4 +31,25 @@
     --forth-color: #77ded3;
 }
 
+.header {
+    
+}
 
+.header__logo a{
+    font-family: 'Arvo', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-decoration: none;
+    color:black;
+}
+
+.header__nav {
+    background-color: silver;
+}
+
+
+
+.header__content {
+    background-image: url(../img/header-banner.png);
+    width: 100vh;
+}
