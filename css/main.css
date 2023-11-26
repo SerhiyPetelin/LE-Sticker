@@ -66,8 +66,9 @@ img {
 
 .our-advantages__cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1fr;
     gap: 20px;
+    padding: 0 16px;
 }
 
 .info-card {
@@ -101,3 +102,20 @@ img {
     font-family: var(--sm-font);
 }
   
+@media (min-width: 480px) {
+    .our-advantages__cards {
+        grid-template-columns: 1fr 1fr;
+    }    
+}
+
+@media (min-width: 768px) {
+    .our-advantages__cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .our-advantages__cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
