@@ -54,7 +54,10 @@ img {
   font-size: 23px;
 }
 
-
+/* Header */
+#header {
+    background: url(/img/header-banner.jpg) top/cover no-repeat;
+}
 
 /* Our-advantages  cards section*/
 .our-advantages {
