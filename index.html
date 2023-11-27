@@ -7,6 +7,7 @@
     <title>LE Sticker</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -89,23 +90,42 @@
                 </article>
             </div>
         </section>
-        <section class="product-tabs">
-            <div class="product-tabs__container">
-                <button class="tab-btn active" data-id="stickers">Stickers</button>
-                <button class="tab-btn" data-id="t-shirts">T-Shirts</button>
-                <button class="tab-btn" data-id="all">All</button>
-                <button class="tab-btn" data-id="new arrival">New Arrival</button>
-                <button class="tab-btn" data-id="best sellers">Best Sellers</button>
-                <button class="tab-btn" data-id="featured">Featured</button>
+
+        <section id="product-cards" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="d-flex flex-wrap justify-content-center mt-5">
+                        <button type="button" class="btn m-2 btn-primary" data-id="stickers">Stickers</button>
+                        <button type="button" class="btn m-2 btn-primary" data-id="t-shirts">T-Shirts</button>
+                        <button type="button" class="btn m-2 btn-primary" data-id="all">All</button>
+                        <button type="button" class="btn m-2 btn-primary" data-id="new arrival">New Arrival</button>
+                        <button type="button" class="btn m-2 btn-primary" data-id="best sellers">Best Sellers</button>
+                        <button type="button" class="btn m-2 btn-primary" data-id="featured">Featured</button>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="product-cards">
+
+        <!-- <div class="card" >
+            <img src="img/sticker-thumbnail/preview-pack-1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-dark">Sticker pack #1</h5>
+                <p class="card-text">22 screen printed stickers</p>
+                <span class="badge text-bg-success"><i class="fa-regular fa-circle-check"></i> Available</span>
+                <span class="badge text-bg-danger"><i class="fa-regular fa-circle-xmark"></i> Not available</span>
+                <span class="badge text-bg-warning"><i class="fa-solid fa-medal"></i> Bestseller</span>
+                <a href="#" class="btn btn-primary"><i class="fa-solid fa-eye"></i></a>
+                <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+        </div> -->
+
+        <section class="product-cards container">
             <div class="product-cards__items">
                 <article class="product-cards__items-card">
                     <img class="product-cards__img" src="img/sticker-thumbnail/preview-pack-1.png"
                         alt="sticker thumbnail">
                     <div class="product-cards__info">
-                        <h3 class="product-cards__title">Sticker pack #1</h3>
+                        <h3 class="product-cards__title"><a href="">Sticker pack #1</a></h3>
                         <p class="product-cards__description">22 screen printed stickers</p>
                         <p class="price">$ 15</p>
                     </div>
@@ -155,7 +175,7 @@
                 </article>
             </div>
         </section>
-        <section class="our-process">
+        <section class="our-process container">
             <div class="our-process__info">
                 <h3 class="our-process__title">How We Work</h3>
                 <p class="our-process__info">At LE Stickers, we take great pride in our commitment to delivering
@@ -169,7 +189,19 @@
                     with you. Thank you for choosing us as your partner, and we look forward to serving you.</p>
             </div>
             <div class="our-process__slider-container">
-                <article class="slide">
+                <div class="slide">
+                    <img class="work-img" src="img/how-we-work/work-process-1.jpg" alt="">
+                    <img class="work-img" src="img/how-we-work/work-process-2.jpg" alt="">
+                    <img class="work-img" src="img/how-we-work/work-process-3.jpg" alt="">
+                    <img class="work-img" src="img/how-we-work/work-process-4.jpg" alt="">
+                    <img class="work-img" src="img/how-we-work/work-process-5.jpg" alt="">
+                    <img class="work-img" src="img/how-we-work/work-process-6.jpg" alt="">
+                    <img class="work-img" src="img/how-we-work/work-process-7.jpg" alt="">
+                    <img class="work-img" src="img/how-we-work/work-process-8.jpg" alt="">
+                    <img class="work-img" src="img/how-we-work/work-process-9.jpg" alt="">
+                    <img class="work-img" src="img/how-we-work/work-process-11.jpg" alt="">
+                    <img class="work-img" src="img/how-we-work/work-process-12.jpg" alt="">
+                </div>
 
             </div>
         </section>
@@ -178,6 +210,9 @@
 
 
     <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

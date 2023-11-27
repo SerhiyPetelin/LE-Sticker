@@ -1,6 +1,6 @@
 /* 
-in stock
-out of stock
+available
+not available
 */
 const products = [
     {
