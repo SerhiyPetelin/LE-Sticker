@@ -40,18 +40,18 @@ img {
 
 /* Navbar */
 .navbar {
-  box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-brand img {
-  width: 40px;
+    width: 40px;
 }
 
 .navbar-brand span {
-  letter-spacing: 1px;
-  font-family: var(--lg-font);
-  font-weight: 700;
-  font-size: 23px;
+    letter-spacing: 1px;
+    font-family: var(--lg-font);
+    font-weight: 700;
+    font-size: 23px;
 }
 
 /* Header */
@@ -101,11 +101,11 @@ img {
     color: #555;
     font-family: var(--sm-font);
 }
-  
+
 @media (min-width: 480px) {
     .our-advantages__cards {
         grid-template-columns: 1fr 1fr;
-    }    
+    }
 }
 
 @media (min-width: 768px) {
@@ -130,7 +130,7 @@ img {
 @media (min-width: 480px) {
     .product-cards__items {
         grid-template-columns: 1fr 1fr;
-    }    
+    }
 }
 
 @media (min-width: 768px) {
@@ -201,4 +201,41 @@ img {
 .product-cards__buttons-item:nth-child(2) {
     background-color: #00a;
     color: #fff;
+}
+
+/* Slider */
+.slick-track {
+    display: flex;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slider {
+    position: relative;
+    padding: 0 50px;
+}
+
+.slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.slider .slick-arrow.slick-prev {
+    left: 0;
+    background: url('../img/circle-arrow-left-solid.svg') 0 0 / 100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next {
+    right: 0;
+    background: url('../img/circle-arrow-right-solid.svg') 0 0 / 100% no-repeat;
+}
+
+.slider__item {
+
 }
