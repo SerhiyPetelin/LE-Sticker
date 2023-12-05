@@ -52,7 +52,7 @@
         <div class="container h-100 d-flex align-items-center justify-content-center">
             <div class="text-center">
                 <h1 class="text-uppercase text-white py-2 fw-bold">Show off your personality with Stickers</h1>
-                <a class="btn btn-primary" href="#" role="button">Shop now</a>
+                <a class="btn btn-primary" href="#product-cards" role="button">Shop now</a>
             </div>
         </div>
     </header>
@@ -131,7 +131,7 @@
                     </div>
                     <div class="product-cards__buttons">
                         <button class="product-cards__buttons-item">Info</button>
-                        <button class="product-cards__buttons-item">Buy</button>
+                        <button class="product-cards__buttons-item">Add to Cart</button>
                     </div>
                 </article>
                 <article class="product-cards__items-card">
@@ -144,7 +144,7 @@
                     </div>
                     <div class="product-cards__buttons">
                         <button class="product-cards__buttons-item">Info</button>
-                        <button class="product-cards__buttons-item">Buy</button>
+                        <button class="product-cards__buttons-item">Add to Cart</button>
                     </div>
                 </article>
                 <article class="product-cards__items-card">
@@ -157,7 +157,7 @@
                     </div>
                     <div class="product-cards__buttons">
                         <button class="product-cards__buttons-item">Info</button>
-                        <button class="product-cards__buttons-item">Buy</button>
+                        <button class="product-cards__buttons-item">Add to Cart</button>
                     </div>
                 </article>
                 <article class="product-cards__items-card">
@@ -170,11 +170,40 @@
                     </div>
                     <div class="product-cards__buttons">
                         <button class="product-cards__buttons-item">Info</button>
-                        <button class="product-cards__buttons-item">Buy</button>
+                        <button class="product-cards__buttons-item">Add to Cart</button>
                     </div>
                 </article>
             </div>
         </section>
+
+        <div class="cart-overlay">
+            <div class="cart">
+                <spam class="close-cart"><i class="fas fa-window-close"></i></spam>
+                <h2>Your Cart</h2>
+                <div class="cart-content">
+                    <!-- cart item -->
+                    <div class="cart-item">
+                        <img src="./img/sticker-thumbnail/preview-pack-1.png" alt="product">
+                        <div class="">
+                            <h4>Sticker pack #1</h4>
+                            <h5>$ 15</h5>
+                            <span class="remove-item">remove</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-chevron-up"></i>
+                            <p class="item-amount">1</p>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <!-- end of cart item -->
+                </div>
+                <div class="cart-footer">
+                    <h3>Your Total : $ <span class="cart-total">0</span></h3>
+                    <button class="claer-cart banner-btn">clear cart</button>
+                </div>
+            </div>
+        </div>
+
         <section class="our-process container">
             <div class="our-process__info">
                 <h3 class="our-process__title">How We Work</h3>
@@ -229,7 +258,9 @@
             </div>
         </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+ 
+    </footer>
 
 
     <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
